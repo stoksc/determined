@@ -90,7 +90,7 @@ message Trial {
 // TrialProfilerMetricSummary is a summary of a single metric.
 message TrialProfilerMetricSummary {
   option (grpc.gateway.protoc_gen_swagger.options.openapiv2_schema) = {
-    json_schema: { required: [ "float", "labels" ] }
+    json_schema: { required: [ "average", "labels" ] }
   };
   // The average of the metric, over the last 10 minutes of its collection.
   float average = 1;
