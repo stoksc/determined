@@ -104,7 +104,7 @@ message TrialProfilerMetricSummary {
 // during profiling.
 message TrialProfilerSummary {
   option (grpc.gateway.protoc_gen_swagger.options.openapiv2_schema) = {
-    json_schema: { required: [ "trial_id", "name" ] }
+    json_schema: { required: [ "metric_summaries" ] }
   };
   // A list of metric summaries.
   repeated TrialProfilerMetricSummary metric_summaries = 1;
